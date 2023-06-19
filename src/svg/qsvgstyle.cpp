@@ -91,7 +91,7 @@ QSvgQualityStyle::QSvgQualityStyle(int color)
 
 void QSvgQualityStyle::setImageRendering(ImageRendering hint) {
     m_imageRendering = hint;
-    m_imageRenderingSet = 1;
+    m_imageRenderingSet = -1;
 }
 
 void QSvgQualityStyle::apply(QPainter *p, const QSvgNode *, QSvgExtraStates &states)
